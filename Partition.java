@@ -5,7 +5,7 @@ public class Partition {
 	/**
 	 * Method takes in an array and partitions it such that all integers larger than
 	 * array[0] are to the right and all integers less than array[0] are to the left
-	 * 
+	 *
 	 * @param      array: the array to be partitioned
 	 * @param left : the lower bound of array index to be partitioned
 	 * @param      right: the upper bound of array index to be partitioned
@@ -40,7 +40,7 @@ public class Partition {
 	/**
 	 * helper method which takes a an array and message and prints out the array
 	 * with he provided message used in testing
-	 * 
+	 *
 	 * @param arr: the array to be printed
 	 * @param msg: the message to be printed
 	 */
@@ -54,7 +54,7 @@ public class Partition {
 
 	/**
 	 * method to select the k smallest element from an array
-	 * 
+	 *
 	 * @param a: array to be processed
 	 * @param k: order of smallest number to be selected
 	 * @return the value of the k smallest number
@@ -66,11 +66,11 @@ public class Partition {
 	/**
 	 * kernel method for select which recursively calls itself to return the k
 	 * smallest element from an array
-	 * 
-	 * @param      a: array to be processed
-	 * @param      k: order of smallest number to be selected
-	 * @param left : the lower bound of array index to be partitioned
-	 * @param      right: the upper bound of array index to be partitioned
+	 *
+	 * @param a: array to be processed
+	 * @param k: order of smallest number to be selected
+	 * @param left : the lower bound of array index to be processed
+	 * @param right: the upper bound of array index to be processed
 	 * @return
 	 */
 	public static int selectKernel(int a[], int k, int left, int right) {
@@ -90,8 +90,8 @@ public class Partition {
 	}
 
 	/**
-	 * 
-	 * @param a
+	 * method to return the median of a given array of ints a
+	 * @param an array of ints
 	 * @return
 	 */
 	public static int median(int a[]) {
@@ -99,18 +99,18 @@ public class Partition {
 	}
 
 	/**
-	 * 
-	 * @param a
+	 * method to sort an int array a in ascending order
+	 * @param a : an array of ints
 	 */
 	public static void quicksort(int a[]) {
 		quicksortKernel(a, 0, a.length - 1);
 	}
 
 	/**
-	 * 
-	 * @param a
-	 * @param left
-	 * @param right
+	 * kernel used by the quickSort method
+	 * @param a : an array of ints
+	 * @param left : the lower bound of array index to be sorted
+	 * @param right: the upper bound of array index to be sorted
 	 */
 	public static void quicksortKernel(int a[], int left, int right) {
 		if (right >= left) {
@@ -123,7 +123,7 @@ public class Partition {
 	/**
 	 * Method to implement the Dutch national flag algorithm in the order red,
 	 * white,blue,unsorted; represented as red : 0, white:1, blue:2
-	 * 
+	 *
 	 * @param a: array to be processed
 	 */
 	public static void dutch1(int a[]) {
@@ -160,7 +160,6 @@ public class Partition {
 	/**
 	 * Method to implement the Dutch national flag algorithm in the order red,
 	 * white, unsorted, blue; represented as red : 0, white:1, blue:2
-	 * 
 	 * @param a: array to be processed
 	 */
 	public static void dutch2(int a[]) {
